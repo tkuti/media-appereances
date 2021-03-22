@@ -76,10 +76,10 @@ nav {
     h2 {
         font-size: 1.5rem;
     }
-    button {
+    .btn {
       border: none;
       background: none;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 1.3rem;
       margin: 15px 0;
     }
@@ -89,15 +89,26 @@ nav {
 @media (max-width: 768px) {
     .content {
         h1{
-            margin-top: 20px;
+            margin-top: 30px;
             margin-left: 20px;
             margin-bottom: 20px;
             text-align: left;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
         .articles {
             grid-template-columns: 1fr;
+            .card-text {
+                min-height: 300px;
+            }
         }
     }
+}
 
+@media (max-width: 1160px) {
+    .content {
+        font-size: .8rem;
+        .articles {
+            grid-gap: 20px;
+        }
+    }
 }
